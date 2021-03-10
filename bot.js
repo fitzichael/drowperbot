@@ -9,13 +9,8 @@ client.on('ready', () => {
 });
 
 client.on('message', (msg) => {
-  if (msg.author === "348915387708080128") {
-    if (msg.toString().toLowerCase().contains('master')){
-      msg.channel.send("please notice me pooty");
-    }
-  }
-  if (msg.author === "277111677265248256") {
-    if (msg.toString().toLowerCase().contains('master')){
+  if (msg.author.id === "348915387708080128") {
+    if (msg.toString().toLowerCase().includes('master')){
       msg.channel.send("please notice me pooty");
     }
   }
