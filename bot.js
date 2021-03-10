@@ -14,6 +14,11 @@ client.on('message', (msg) => {
       msg.channel.send("please notice me pooty");
     }
   }
+  if (msg.author === "277111677265248256") {
+    if (msg.toString().toLowerCase().contains('master')){
+      msg.channel.send("please notice me pooty");
+    }
+  }
 });
 
 client.login(auth.token);
